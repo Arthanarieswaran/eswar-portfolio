@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawse - Full-Stack Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">ARTHANARIESWARAN SN</span>
+                <span class="brand-dot"></span>
+                <span class="brand-dot"></span>
+            </a>
+
+            <div class="d-flex align-items-center">
+                <div class="navbar-social d-lg-none d-flex align-items-center">
+                    <a href="mailto:arthanarieswaran2002sn@gmail.com"
+                        class="social-icon ms-2 me-3 border border-2 border-light rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/s-arthanarieswaran-025824261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="social-icon ms-2 me-3 border border-2 border-light rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Social Media Links -->
+                <div class="navbar-social d-none d-lg-flex align-items-center ms-3 me-4">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthanarieswaran2002sn@gmail.com&su=Job%20Opportunity&body=Hello%20Arthanarieswaran,"
+                        target="_blank" rel="noopener noreferrer"
+                        class="social-icon ms-2 me-3 border border-2 border-light rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/s-arthanarieswaran-025824261" target="_blank"
+                        class="social-icon ms-2 me-3 border border-2 border-light rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <div class="theme-toggle-track">
+                        <div class="theme-toggle-thumb">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background" style="background-image: url('/assets/bgimg.jpeg') !important; ">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <div>
+                            <div class="hero-badge">
+                                <span class="badge-text">Every day is yours 👋</span>
+                                <div class="badge-glow"></div>
+                            </div>
+                        </div>
+
+                        <h4 class="hero-title">
+                            <span class="typing-container">
+                                <span class="typing-text" id="typingText"></span>
+                                <span class="cursor">|</span>
+                            </span>
+                        </h4>
+
+                        <p class="hero-subtitle">
+                            Passionate full-stack developer with 2+ years of experience crafting
+                            exceptional web applications using Laravel, React, Vue, and cutting-edge technologies.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-glow">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="documents\eswar_cv.pdf" download="eswar_cv.pdf" class="btn btn-outline">
+                                <span>Resume</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="2">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="8">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="hero-visual">
+                        <div class="profile-container">
+                            <div class="profile-ring ring-1"></div>
+                            <div class="profile-ring ring-2"></div>
+                            <div class="profile-ring ring-3"></div>
+                            <div class="profile-avatar">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <div class="scroll-text">Scroll to explore</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="section-header reveal-up">
+                        <span class="section-tag">About Me</span>
+                        <h2 class="section-title">Crafting Digital Excellence</h2>
+                        <p class="section-subtitle">
+                            Passionate about creating seamless user experiences and robust backend solutions
+                        </p>
+                    </div>
+
+                    <div class="about-content reveal-up">
+                        <p class="about-text">
+                            I'm a dedicated full-stack developer who transforms complex challenges into
+                            elegant, scalable solutions. With expertise spanning modern frontend frameworks
+                            and powerful backend technologies, I build applications that users love and
+                            businesses depend on.
+                        </p>
+
+                        <p class="about-text">
+                            My journey began 2+ years ago, and since then I've been continuously learning,
+                            growing, and pushing the boundaries of what's possible with code. I believe in
+                            writing clean, maintainable code and creating intuitive user interfaces.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security Best Practices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-visual reveal-up">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control close"></span>
+                                    <span class="control minimize"></span>
+                                    <span class="control maximize"></span>
+                                </div>
+                                <div class="window-title">mySelf.js</div>
+                            </div>
+                            <div class="window-content">
+                                <div class="code-line">
+                                    <span class="code-keyword">const</span>
+                                    <span class="code-variable">developer</span> = {
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">name:</span>
+                                    <span class="code-string">'Arthanarieswaran SN'</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">role:</span>
+                                    <span class="code-string">'Software Engineer'</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">experience:</span>
+                                    <span class="code-number">2</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">passion:</span>
+                                    <span class="code-string">'Transforming ideas into intuitive UX and efficient
+                                        APIs'</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">frontend:</span> [
+                                </div>
+                                <div class="code-line indent-2">
+                                    <span class="code-string">'Laravel (Blade)'</span>,
+                                    <span class="code-string">'React.js'</span>,
+                                    <span class="code-string">'Vue.js'</span>,
+                                    <span class="code-string">'Anguler.js'</span>,
+                                    <span class="code-string">'JavaScript'</span>,
+                                    <span class="code-string">'Bootstrap'</span>,
+                                    <span class="code-string">'Tailwind CSS'</span>,
+                                    <span class="code-string">'Flutter'</span>
+                                </div>
+                                <div class="code-line indent">],</div>
+                                <div class="code-line indent">
+                                    <span class="code-property">backend:</span> [
+                                </div>
+                                <div class="code-line indent-2">
+                                    <span class="code-string">'Laravel (PHP)'</span>,
+                                    <span class="code-string">'Node JS'</span>
+                                </div>
+                                <div class="code-line indent">],</div>
+                                <div class="code-line indent">
+                                    <span class="code-property">database:</span> [
+                                </div>
+                                <div class="code-line indent-2">
+                                    <span class="code-string">'MySQL'</span>,
+                                    <span class="code-string">'PostgreSQL'</span>,
+                                    <span class="code-string">'MongoDB'</span>
+                                </div>
+                                <div class="code-line indent">],</div>
+                                <div class="code-line indent">
+                                    <span class="code-property">tools:</span> [
+                                </div>
+                                <div class="code-line indent-2">
+                                    <span class="code-string">'Git'</span>,
+                                    <span class="code-string">'GitHub'</span>,
+                                    <span class="code-string">'AWS'</span>,
+                                    <span class="code-string">'VS Code'</span>,
+                                    <span class="code-string">'Android Studio'</span>,
+                                    <span class="code-string">'Docker'</span>
+                                    <span class="code-string">'Postman'</span>
+                                </div>
+                                <div class="code-line indent">]</div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-section">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Skills & Technologies</span>
+                <h2 class="section-title">My Technical Arsenal</h2>
+                <p class="section-subtitle">
+                    Constantly evolving toolkit of modern technologies and frameworks
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="category-title">Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-delay="0">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <span class="skill-name">Vue</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <span class="skill-name">Angular</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="500">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="400">
+                            <div class="skill-icon">
+                                <i class="devicon-tailwindcss-original"></i>
+                            </div>
+                            <span class="skill-name">Tailwind</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="100">
+                            <div class="skill-icon">
+                                <i class="devicon-flutter-plain"></i>
+                            </div>
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-delay="0">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-glow"></div>
+                        </div>
+
+                        <div class="skill-item" data-delay="300">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="400">
+                            <div class="skill-icon">
+                                <i class="devicon-postgresql-plain"></i>
+                            </div>
+                            <span class="skill-name">PostgreSQl</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="400">
+                            <div class="skill-icon">
+                                <i class="devicon-mongodb-plain"></i>
+                            </div>
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">Tools & DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-delay="0">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="300">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="200">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="500">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="400">
+                            <div class="skill-icon">
+                                <i class="devicon-androidstudio-plain"></i>
+                            </div>
+                            <span class="skill-name">Android Studio</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="100">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item" data-delay="100">
+                            <div class="skill-icon">
+                                <i class="devicon-postman-plain"></i>
+                            </div>
+                            <span class="skill-name">Postman</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects That Define Me</h2>
+                <p class="section-subtitle">
+                    A showcase of my passion for creating exceptional digital experiences
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="/public/assest/inventory.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-btn">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Inventory Management</h3>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A full-stack app for tracking and optimizing stock with product categorization, low-stock
+                            alerts, sales tracking, and role-based access. Designed with a responsive UI for seamless
+                            desktop and mobile use.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel/Codeigniter</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="/public/assest/textails.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-btn">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Textails Management</h3>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A <strong>SaaS</strong> solution for managing fabric inventory, orders, suppliers, and
+                            production. Features
+                            real-time stock updates, automated order tracking, secure payments, SMS alerts, and
+                            role-based access for streamlined operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-image">
+                        <img src="/public/assest/4447.jpg" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-btn">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Healthcare Platform</h3>
+                            <div class="project-status">
+                                <span class="status-dot"></span>
+                                <span>Live</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Built a healthcare platform with appointment booking, video consultations, lab and pharmacy
+                            modules, and doctor-patient management. Integrated secure payments, OTP authentication, and
+                            real-time notifications for seamless and efficient care.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-section">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">
+                    Building expertise through diverse challenges and continuous learning
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <!-- <div class="timeline-badge">Current</div> -->
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Tamilzorous Private Limited</span>
+                                <span class="period">Dec 2023 - Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>
+                                Developed and maintained full-stack web applications using Laravel, React.js and
+                                Node.js, and
+                                built RESTful APIs to support seamless integration and functionality.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>Developed scalable web applications using Laravel and the MERN stack.</li>
+                                <li>Built secure REST/GraphQL APIs with JWT-based authentication.</li>
+                                <li>Designed and optimized relational & NoSQL databases for performance and scalability.
+                                </li>
+                                <li>Integrated third-party services such as payment gateways, SMS, and push
+                                    notifications.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">CodeIgniter</span>
+                            <span class="skill-badge">MERN</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">AWS</span>
+                            <span class="skill-badge">Digital Ocean</span>
+                            <span class="skill-badge">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Software Engineer Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Tamilzorous Private Limited</span>
+                                <span class="period">Sep 2023 – Nov 2023</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>
+                                Developed and maintained full-stack web applications using Laravel, React.js
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>Developed and maintained full-stack web applications using Laravel and React.js.
+                                </li>
+                                <li>Implemented responsive UIs to improve user experience across devices.</li>
+                                <li>Gained hands-on experience with Git/GitHub for version control and team
+                                    collaboration.</li>
+                                <li>Wrote clean, reusable code while learning best practices in software development.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Vue.js</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Freelance Software Engineer</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Self-Employed</span>
+                                <span class="period">Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>
+                                Delivered e-commerce, inventory, and cross-platform applications using Laravel, Flutter,
+                                and the MERN stack.
+                            </p>
+                            <ul class="timeline-achievements">
+                                <li>Built custom software solutions for clients in textile, education, and hostel
+                                    management domains.</li>
+                                <li>Designed and implemented secure RESTful APIs, role-based access, and real-time
+                                    notifications.</li>
+                                <li>Managed end-to-end project lifecycle, from requirement gathering to deployment and
+                                    support.</li>
+                                <li>Integrated payment gateways, SMS, and third-party APIs to meet business
+                                    requirements.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Ready to Start Something Amazing?</h2>
+                <p class="section-subtitle">
+                    I'm always excited to discuss new opportunities and innovative projects
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-container reveal-up">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" id="name" name="name" required>
+                                        <label for="name">Your Name</label>
+                                        <div class="form-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" required>
+                                        <label for="email">Your Email</label>
+                                        <div class="form-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="subject" name="subject" required>
+                                        <label for="subject">Subject</label>
+                                        <div class="form-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea id="message" name="message" rows="5" required></textarea>
+                                        <label for="message">Your Message</label>
+                                        <div class="form-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-glow submit-btn">
+                                        <span class="btn-text">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Send Message
+                                        </span>
+                                        <span class="btn-loading">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                            Sending...
+                                        </span>
+                                        <span class="btn-success">
+                                            <i class="fas fa-check"></i>
+                                            Message Sent!
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info reveal-up">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>arthanarieswaran2002sn@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9655039091</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/s-arthanarieswaran-025824261" target="_blank"
+                                        rel="noopener noreferrer">
+                                        www.linkedin.com/in/s-arthanarieswaran-025824261
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Vanavasi, Mettur Taluk, Salem District, Tamil Nadu – 636457</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Arthanarieswaran SN</h3>
+                    <p>Every day is yours 👋</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/s-arthanarieswaran-025824261" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthanarieswaran2002sn@gmail.com&su=Job%20Opportunity&body=Hello%20Arthanarieswaran,"
+                            class="social-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eswar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
